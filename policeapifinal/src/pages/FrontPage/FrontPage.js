@@ -1,9 +1,11 @@
 import "./FrontPage.css";
 import RecentUpdate from "./recentUpdate";
+import NavBar from "../../NavBar";
 
 function Front() {
     return (
         <div>
+            <NavBar />
             <h1 id="polH1">Police Api Web Application</h1>
             <h2 id="polH2">Made using the Uk Police Api</h2>
             <h3 id="polH3">The Police Api documentation can be found at{" "}

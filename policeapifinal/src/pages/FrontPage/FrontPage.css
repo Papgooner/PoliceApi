@@ -1,12 +1,16 @@
 #polH1 {
     text-decoration: underline;
+    font-size: 5vw;
 }
 
 #polH2 {
-    
+    font-size: 3vw;
 }
 
 #polH3 {
-    
+    font-size: 2vw;
 }
 
+.UpdateText {
+    font-size: 2vw;
+}
