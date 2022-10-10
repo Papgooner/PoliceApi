@@ -1,31 +1,33 @@
 import NavBar from "../../NavBar";
 import "./HomePage.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import DynamicButton from "./DynamicButtons";
 import ApiCall from "./ApiCall";
 
 function Home() {
     const [location, setLocation] = useState("avon-and-somerset");
     const placeHolder = [
-        {name: "London Police", id: "London",}
+        {name: "London Police", id: "London",},
+        {name: "Cambridgeshire Police", id: "Cambridge",},
+        {name: "Notts Police", id: "Nottingham",}
     ]
     function handleClick(event) {
         let locationValue = event.target.value;
         setLocation(locationValue);
-        console.log(location)
+        setData(placeHolder);
     }
     const [data, setData] = useState(placeHolder)
 
     function onApiCall(dataFromApi) {
-      console.log(dataFromApi);
       for (let i = 0; i < dataFromApi.length; i++) {
-        console.log(dataFromApi[0])
+        console.log(dataFromApi[i])
       }
-      let dataArray = [dataFromApi];
-      setData(dataArray);
+      console.log(dataFromApi);
+      console.log(dataFromApi[0]);
     }
     
-    const policeComponent = data?.map((pol) => <DynamicButton key={pol.id} name={pol.name} id={pol.id} />)
+    
+    const policeComponent = data?.map((pol) => <DynamicButton name={pol.name} id={pol.id} />)
 
     return (
         <div>

@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 
-useEffect(function ApiCall(props) {
+function ApiCall(props) {
     /* const api_url = "https://data.police.uk/api/forces/" + props.location; */
-    const api_url = "https://data.police.uk/api/forces/leicestershire";
+    const api_url = "https://data.police.uk/api/forces";
     async function fetchData(url) {
       const response = await fetch(url);
   
@@ -11,8 +11,9 @@ useEffect(function ApiCall(props) {
       props.onApiCallHandler(data);
 
     }
-    fetchData(api_url);
+    useEffect(() => {
+      fetchData(api_url)
+    },[]);
   }
-)
 
 export default ApiCall;
