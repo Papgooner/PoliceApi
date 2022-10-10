@@ -9,8 +9,8 @@ export default class DynamicButton extends React.Component {
             value: props.id
         }
     };
-    clickHandler = (event) => {
-        const thing = event.target.value;
+    clickHandler = () => {
+        const thing = this.value;
         console.log(thing);
         console.log("click handler fired");
     };

@@ -6,17 +6,12 @@ import ApiCall from "./ApiCall";
 
 function Home() {
     const [location, setLocation] = useState("avon-and-somerset");
-    const placeHolder = [
-        {name: "London Police", id: "London",},
-        {name: "Cambridgeshire Police", id: "Cambridge",},
-        {name: "Notts Police", id: "Nottingham",}
-    ]
+
     function handleClick(event) {
         let locationValue = event.target.value;
         setLocation(locationValue);
-        setData(placeHolder);
     }
-    const [data, setData] = useState(placeHolder)
+    const [data, setData] = useState([]);
 
     function onApiCall(dataFromApi) {
       for (let i = 0; i < dataFromApi.length; i++) {
@@ -24,8 +19,8 @@ function Home() {
       }
       console.log(dataFromApi);
       console.log(dataFromApi[0]);
+      setData(dataFromApi);
     }
-    
     
     const policeComponent = data?.map((pol) => <DynamicButton name={pol.name} id={pol.id} />)
 
