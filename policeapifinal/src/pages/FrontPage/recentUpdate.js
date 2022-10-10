@@ -12,7 +12,7 @@ function RecentUpdate() {
   getapi3(api_url);
   return (
     <div>
-      <div className="Outputs">
+      <div className="UpdateOutputs">
           <br></br>
           <h3 className="UpdateText">The Police Api was last updated on: {" "}
           <p className="UpdateText" id="date"></p>

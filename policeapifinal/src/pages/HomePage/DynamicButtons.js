@@ -1,4 +1,5 @@
 import React from "react";
+import "./HomePage.css";
 
 export default class DynamicButton extends React.Component {
     constructor(props) {
@@ -17,7 +18,7 @@ export default class DynamicButton extends React.Component {
 
     render() {
         return (
-                <button onClick={this.clickHandler} value={this.state.id}>{this.state.name}</button>
+                <button className="Outputs" onClick={this.clickHandler} value={this.state.id}>{this.state.name}</button>
         )
     }
 }

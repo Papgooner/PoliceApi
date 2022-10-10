@@ -38,12 +38,12 @@
 }
 
 nav {
+  text-decoration: none;
   position: fixed;
   color: #3a3a3a;
   max-width: 100%;
   height: auto;
   top: 0px;
-  left: 0px;
   opacity: 1;
   font-family: "Roboto Mono", monospace;
   display: flex;
@@ -59,25 +59,30 @@ nav {
   font-size: 1.5vw;
 }
 
-a:link {
+.nav :hover {
+  background-color: white;
+}
 
+a:link {
+  text-decoration: none;
   background-color: transparent;
   padding-left: 10px;
   padding-right: 10px;
 }
 
 a:visited {
-
+  text-decoration: none;
   background-color: transparent;
   padding-left: 10px;
   padding-right: 10px;
 }
 
 a:hover {
-
+  text-decoration: none;
   background-color: transparent;
   padding-left: 10px;
   padding-right: 10px;
+  color: grey
 }
 
 .NavLinks {

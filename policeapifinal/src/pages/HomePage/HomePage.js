@@ -5,12 +5,7 @@ import DynamicButton from "./DynamicButtons";
 import ApiCall from "./ApiCall";
 
 function Home() {
-    const [location, setLocation] = useState("avon-and-somerset");
 
-    function handleClick(event) {
-        let locationValue = event.target.value;
-        setLocation(locationValue);
-    }
     const [data, setData] = useState([]);
 
     function onApiCall(dataFromApi) {
@@ -25,12 +20,15 @@ function Home() {
     const policeComponent = data?.map((pol) => <DynamicButton name={pol.name} id={pol.id} />)
 
     return (
-        <div>
+        <div id="HomepageDiv">
             <NavBar />
-        <p>Home page</p>
         <ApiCall onApiCallHandler={onApiCall} />
-        <button onClick={handleClick}>click</button>
+        <div id="OutputDiv">
+            <div id="TitleDiv">
+        <p id="Title">Home page</p>
+        </div>
         <p>{policeComponent}</p>
+        </div>
         </div>
     )
 }

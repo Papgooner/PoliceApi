@@ -1,4 +1,45 @@
 .Outputs {
-    color:black;
-    font-size: 1vw;
+    color: white;
+    font-size: 1.5vw;
+    padding: 0.7vw;
+    border-radius: 10px;
+    margin: 0.2vw;
+    background-color: rgb(22, 17, 58);
+}
+
+.Outputs:Hover {
+    background-color: rgb(52, 54, 87);
+}
+
+#Title {
+    font-size: 5vw;
+    font-weight: bold;
+    color:white;
+}
+
+#OutputDiv {
+    background-color: rgb(39, 41, 83);
+    border-radius: 10px;
+    top: 0px;
+    height: 90%;
+    width: 90%;
+    margin-left: 5%;
+}
+
+#TitleDiv {
+    background-color: rgb(22, 17, 58);
+    border-radius: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#HomepageDiv {
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    background-color: rgb(22, 17, 58);
 }
