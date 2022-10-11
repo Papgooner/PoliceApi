@@ -16,7 +16,8 @@ function Home() {
       console.log(thing);
     }
     
-    const policeComponent = data?.map((pol) => <DynamicButton getValueHandler={getValue} name={pol.name} id={pol.id} />)
+    /* Key might need to be reworked, as Key value is the same as id value */
+    const policeComponent = data?.map((pol) => <DynamicButton getValueHandler={getValue} key={pol.id} name={pol.name} id={pol.id} />)
 
     return (
         <div id="HomepageDiv">
@@ -24,7 +25,7 @@ function Home() {
         <ApiCall onApiCallHandler={onApiCall} />
         <div id="OutputDiv">
             <div id="TitleDiv">
-        <p id="Title">Home page</p>
+        <p id="Title">Choose a police department</p>
         </div>
         <>{policeComponent}</>
         </div>
