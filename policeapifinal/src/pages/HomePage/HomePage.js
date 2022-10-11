@@ -16,8 +16,12 @@ function Home() {
       console.log(dataFromApi[0]);
       setData(dataFromApi);
     }
+
+    function getValue(thing) {
+      console.log(thing);
+    }
     
-    const policeComponent = data?.map((pol) => <DynamicButton name={pol.name} id={pol.id} />)
+    const policeComponent = data?.map((pol) => <DynamicButton getValueHandler={getValue} name={pol.name} id={pol.id} />)
 
     return (
         <div id="HomepageDiv">
@@ -27,7 +31,7 @@ function Home() {
             <div id="TitleDiv">
         <p id="Title">Home page</p>
         </div>
-        <p>{policeComponent}</p>
+        <>{policeComponent}</>
         </div>
         </div>
     )
