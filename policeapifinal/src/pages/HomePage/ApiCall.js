@@ -7,7 +7,6 @@ function ApiCall(props) {
       const response = await fetch(url);
   
       var data = await response.json();
-      console.log(data);
       props.onApiCallHandler(data);
 
     }

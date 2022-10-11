@@ -4,7 +4,6 @@ import "./HomePage.css";
 export default class DynamicButton extends React.Component {
     constructor(props) {
         super(props);
-        console.log(props);
         this.state = {
             name: props.name,
             value: props.id

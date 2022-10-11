@@ -9,11 +9,6 @@ function Home() {
     const [data, setData] = useState([]);
 
     function onApiCall(dataFromApi) {
-      for (let i = 0; i < dataFromApi.length; i++) {
-        console.log(dataFromApi[i])
-      }
-      console.log(dataFromApi);
-      console.log(dataFromApi[0]);
       setData(dataFromApi);
     }
 
