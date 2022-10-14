@@ -29,10 +29,10 @@
 #FrontpageText {
     border-radius: 10px;
     top: 0px;
-    height: 50vw;
-    width: 90vw;
+    height: 80%;
+    width: 90%;
     margin-left: 5%;
-    margin-top: 2vw;
+    margin-top: 5%;
     background-color: rgb(39, 41, 83);
 }
 
