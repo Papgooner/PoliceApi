@@ -1,4 +1,4 @@
-import NavBar from "../../NavBar";
+import NavBar from "../../components/NavBar";
 import "./HomePage.css";
 import { useState } from "react";
 import DynamicButton from "./DynamicButtons";
@@ -14,6 +14,10 @@ function Home() {
 
     function getValue(thing) {
       console.log(thing);
+      let first = "https://data.police.uk/api/forces/";
+      let complete = first + thing;
+      localStorage.setItem("completeUrl", complete)
+      console.log(complete);
     }
     
     /* Key might need to be reworked, as Key value is the same as id value */

@@ -1,6 +1,6 @@
 import "./FrontPage.css";
 import RecentUpdate from "./recentUpdate";
-import NavBar from "../../NavBar";
+import NavBar from "../../components/NavBar";
 import "./FrontPage.css";
 
 function Front() {
