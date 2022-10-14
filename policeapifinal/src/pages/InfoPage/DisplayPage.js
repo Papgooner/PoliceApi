@@ -1,7 +1,7 @@
 import NavBar from "../../NavBar";
-import "./InfoPage.css";
+import "./DisplayPage.css";
 
-function InfoPage(props) {
+function DisplayPage(props) {
     return (
         <div id="InfoPageDiv">
             <NavBar />
@@ -12,4 +12,4 @@ function InfoPage(props) {
     )
 }
 
-export default InfoPage;
+export default DisplayPage;

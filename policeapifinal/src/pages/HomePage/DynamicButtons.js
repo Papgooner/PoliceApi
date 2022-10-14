@@ -9,8 +9,8 @@ export default class DynamicButton extends React.Component {
             name: props.name,
             value: props.id
         }
-        this.clickHandler = this.clickHandler.bind(this);
     };
+    
     clickHandler = () => {
         const thing = this.state.value;
         console.log(thing);
