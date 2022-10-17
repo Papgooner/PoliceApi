@@ -13,9 +13,17 @@
 #InfoOutputsDiv {
     border-radius: 10px;
     top: 0px;
-    height: 90%;
+    height: auto;
     width: 90%;
     margin-left: 5%;
     margin-top: 3%;
     background-color: rgb(39, 41, 83);
+}
+
+.infoOutputs {
+    font-size: 2vw;
+}
+
+#Name {
+    font-size: 3vw;
 }

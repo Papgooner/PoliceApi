@@ -1,17 +1,17 @@
 #polH1 {
-    font-size: 5vw;
+    font-size: 6vw;
 }
 
 #polH2 {
-    font-size: 3vw;
+    font-size: 4vw;
 }
 
 #polH3 {
-    font-size: 2vw;
+    font-size: 3vw;
 }
 
 .UpdateText {
-    font-size: 2vw;
+    font-size: 3vw;
 }
 
 #FrontpageDiv {
@@ -29,7 +29,7 @@
 #FrontpageText {
     border-radius: 10px;
     top: 0px;
-    height: 80%;
+    height: auto;
     width: 90%;
     margin-left: 5%;
     margin-top: 5%;
