@@ -15,11 +15,9 @@ function Home() {
   }
 
   function getValue(thing) {
-    console.log(thing);
     let first = "https://data.police.uk/api/forces/";
     let complete = first + thing;
     localStorage.setItem("completeUrl", complete)
-    console.log(complete);
     setIsShown(true);
   }
 

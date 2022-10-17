@@ -12,7 +12,6 @@ export default class DynamicButton extends React.Component {
 
     clickHandler = () => {
         const thing = this.state.value;
-        console.log(thing);
         this.passUpToHomepage(thing);
     };
 

@@ -4,9 +4,11 @@ The project was built using React JS, fetching data from the UK Police Api.
 An initial selection of options is presented, created using the recieved Api data. 
 The presented information will be updated based upon user input.
 
-All data is unclassified.
+All data is unclassified. The API itself isn't great; it contains lots of missing data, and half complete entries,
+so when browsing the app, if misspellings, missing data etc is found, that is the fault of the API, and unfortunatley I 
+cannot change anything about that. 
 
-The app was made using VS code, Node JS v16.15.1, and React JS v18.2.0.
+The app was made using Visual Studio Code, Node JS v16.15.1, and React JS v18.2.0.
 
 ## Running the app
 

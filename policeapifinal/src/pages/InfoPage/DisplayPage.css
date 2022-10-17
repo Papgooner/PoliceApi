@@ -42,3 +42,15 @@
     margin-top: 0px;
     font-size: 2.5vw;
 }
+
+#Url {
+    font-size: 3vw;
+}
+
+.DocumentationLink {
+    color: white;
+}
+
+.DocumentationLink:hover {
+    color: blue;
+}
