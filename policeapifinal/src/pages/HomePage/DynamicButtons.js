@@ -1,6 +1,5 @@
 import React from "react";
 import "./HomePage.css";
-import { redirect } from "react-router-dom";
 
 export default class DynamicButton extends React.Component {
     constructor(props) {
@@ -15,7 +14,6 @@ export default class DynamicButton extends React.Component {
         const thing = this.state.value;
         console.log(thing);
         this.passUpToHomepage(thing);
-        return redirect("/Info");
     };
 
     passUpToHomepage = (thing) => {

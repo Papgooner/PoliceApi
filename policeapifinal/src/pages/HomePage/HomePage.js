@@ -3,10 +3,12 @@ import "./HomePage.css";
 import { useState } from "react";
 import DynamicButton from "./DynamicButtons";
 import ApiCall from "./ApiCall";
+import { Navigate } from "react-router-dom";
 
 function Home() {
 
     const [data, setData] = useState([]);
+    const [isShown, setIsShown] = useState(false);
 
     function onApiCall(dataFromApi) {
       setData(dataFromApi);
@@ -18,6 +20,7 @@ function Home() {
       let complete = first + thing;
       localStorage.setItem("completeUrl", complete)
       console.log(complete);
+      setIsShown(true);
     }
     
     /* Key might need to be reworked, as Key value is the same as id value */
@@ -32,6 +35,9 @@ function Home() {
         <p id="Title">Choose a police department</p>
         </div>
         <>{policeComponent}</>
+        {isShown && (
+          <Navigate to="/Info" />
+        )}
         </div>
         </div>
     )
