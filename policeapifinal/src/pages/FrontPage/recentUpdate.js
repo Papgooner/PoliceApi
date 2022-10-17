@@ -13,12 +13,12 @@ function RecentUpdate() {
   return (
     <div>
       <div className="UpdateOutputs">
-          <br></br>
-          <h3 className="UpdateText">The Police Api was last updated on: {" "}
+        <br></br>
+        <h3 className="UpdateText">The Police Api was last updated on: {" "}
           <p className="UpdateText" id="date"></p>
-          </h3>
+        </h3>
       </div>
-      </div>
+    </div>
   )
 }
 

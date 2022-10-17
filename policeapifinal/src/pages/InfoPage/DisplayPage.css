@@ -27,3 +27,7 @@
 #Name {
     font-size: 3vw;
 }
+
+.telephoneLabel {
+    display: inline-block;
+}

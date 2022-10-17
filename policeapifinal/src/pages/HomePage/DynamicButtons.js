@@ -9,7 +9,7 @@ export default class DynamicButton extends React.Component {
             value: props.id
         }
     };
-    
+
     clickHandler = () => {
         const thing = this.state.value;
         console.log(thing);
@@ -22,7 +22,7 @@ export default class DynamicButton extends React.Component {
 
     render() {
         return (
-                <button className="Outputs" onClick={this.clickHandler} value={this.state.id}>{this.state.name}</button>
+            <button className="Outputs" onClick={this.clickHandler} value={this.state.id}>{this.state.name}</button>
         )
     }
 }

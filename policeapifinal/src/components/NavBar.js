@@ -4,7 +4,7 @@ function NavBar() {
     return (
         <nav>
             <Link className="NavLinks" to="/">Front-Page</Link>
-            <Link className="NavLinks" to="/Home">Dashboard</Link> 
+            <Link className="NavLinks" to="/Home">Dashboard</Link>
         </nav>
     )
 }

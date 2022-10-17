@@ -28,7 +28,9 @@ function DisplayPage() {
       <div id="InfoOutputsDiv">
         <p className="infoOutputs" id="Name"></p>
         <p className="infoOutputs" id="Description"></p>
-        <p className="infoOutputs" id="Telephone"></p>
+        <label className="telephoneLabel" htmlFor="Telephone">Non-Emergency Number:
+          <p className="infoOutputs" id="Telephone"></p>
+        </label>
         <p className="infoOutputs" id="Url"></p>
       </div>
     </div>
