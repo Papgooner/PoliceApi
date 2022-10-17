@@ -29,7 +29,7 @@ function DisplayPage() {
         <p className="infoOutputs" id="Name"></p>
         <p className="infoOutputs" id="Description"></p>
         <label className="telephoneLabel" htmlFor="Telephone">Non-Emergency Number:
-          <p className="infoOutputs" id="Telephone"></p>
+          <p className="telephoneNum" id="Telephone"></p>
         </label>
         <p className="infoOutputs" id="Url"></p>
       </div>

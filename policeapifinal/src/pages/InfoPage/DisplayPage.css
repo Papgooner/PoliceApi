@@ -29,5 +29,16 @@
 }
 
 .telephoneLabel {
-    display: inline-block;
+    margin-left: 32%;
+    width:auto;
+    text-align: center;
+    font-size: 2.5vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.telephoneNum {
+    top: 0px;
+    margin-top: 0px;
+    font-size: 2.5vw;
 }
