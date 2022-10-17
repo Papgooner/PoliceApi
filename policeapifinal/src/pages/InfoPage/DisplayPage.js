@@ -26,7 +26,7 @@ function DisplayPage() {
     <div id="InfoPageDiv">
       <NavBar />
       <div id="InfoOutputsDiv">
-        <h1 className="infoOutputs" id="Name"></h1>
+        <p className="infoOutputs" id="Name"></p>
         <p className="infoOutputs" id="Description"></p>
         <p className="infoOutputs" id="Telephone"></p>
         <p className="infoOutputs" id="Url"></p>
