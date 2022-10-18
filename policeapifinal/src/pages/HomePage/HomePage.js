@@ -21,7 +21,6 @@ function Home() {
     setIsShown(true);
   }
 
-  /* Key might need to be reworked, as Key value is the same as id value */
   const policeComponent = data?.map((pol) => <DynamicButton getValueHandler={getValue} key={pol.id} name={pol.name} id={pol.id} />)
 
   return (
